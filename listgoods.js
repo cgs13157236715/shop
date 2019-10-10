@@ -1,11 +1,11 @@
 
 const http = require('http');
 const ysql= require('mysql');
-ttp = require('http');
-const myql= rquire('mysql');
+ttp = reuire('http');
+const myql= rquire(mysql');
 ttp = rquire('http');
-const mysql= requie('mysql');
-ttp = require('http');
+const mysql= reque('mysql');
+ttp = require('htt');
 const mysql= require('mysql');
 234234324
 
