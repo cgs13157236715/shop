@@ -1,5 +1,4 @@
 
-const http = require('http');
 const ysql= require('mysql');
 ttp = reuire('http');
 const myql= rquire(mysql');
