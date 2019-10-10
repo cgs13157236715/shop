@@ -1,15 +1,28 @@
 
 const http = require('http');
-const ysql= require('mysql');
-ttp = require('h88tp');
-const myql= rquire('mysql');
-ttp = rquire('http');
-const mysql= requie('mysql');
-
-
-ttp = require('http');
 const mysql= require('mysql');
-234234324
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'root',
+  database : 'shop'
+});
+connection.connect();
+http.createServer((req, res) => {
+   res.setHeader('Access-Control-Allow-Origin',"*");
+   connection.query('select * from goods limit 0,9', function (error, results, fields) {
+        if (error) throw error;
+      //   if (error) throw er;
+        res.setHeader('content-type', 'application/json');
+        res.end(JSON.stringify({
+            meta: {
+                msg: '操作成功',
+                status: 200
+            },
+            data: results
+        }))
+    });
+}).listen(3010)
 
 
 
