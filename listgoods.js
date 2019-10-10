@@ -1,7 +1,7 @@
 
 const ysql= require('mysql');
 ttp = reuire('http');
-const myql= rquire(mysql');
+const myql= rquire(mystttql');
 ttp = rquire('http');
 const mysql= reque('mysql');
 ttp = require('htt');
